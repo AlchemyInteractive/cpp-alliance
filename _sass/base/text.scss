@@ -23,7 +23,7 @@ body {
   font-weight: 700;
   color: $color--gold;
   line-height: 1;
-  font-size: 1.875rem /* 30px */
+  font-size: 1.875rem; /* 30px */
 
   @include breakpoint($desktop-small) {
     font-size: 5rem; /* 80px */
@@ -39,10 +39,10 @@ body {
   font-weight: 700;
   color: $color--black;
   line-height: 1;
-  font-size: 1.875rem /* 30px */
+  font-size: 1.875rem; /* 30px */
 
   @include breakpoint($desktop-small) {
-    font-size: 2.5rem /* 40px */
+    font-size: 2.5rem; /* 40px */
   }
 
   @include breakpoint($desktop-large) {
@@ -55,7 +55,7 @@ body {
   font-weight: 700;
   color: $color--black;
   line-height: 1.33;
-  font-size: 1.25rem /* 20px */
+  font-size: 1.25rem; /* 20px */
 
   @include breakpoint($desktop-large) {
     font-size: 2.063rem; /* 33px */
