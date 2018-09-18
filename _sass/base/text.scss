@@ -1,0 +1,133 @@
+// General
+html {
+  font-size: $font-size--primary;
+}
+
+body {
+  background: $color--white;
+  color: $color--black;
+  font-family: $font-family--roboto;
+  font-size: $font-size--primary;
+  font-weight: 400;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Base Text Styles
+
+.text-xxl { /* hero main header */
+  font-family: $font-family--roboto;
+  font-weight: 700;
+  color: $color--gold;
+  line-height: 1;
+
+  @include breakpoint($desktop-small) {
+    font-size: 120px;
+  }
+}
+
+.text-xl { /* hero subheader, section header  */
+  font-family: $font-family--roboto;
+  font-weight: 700;
+  color: $color--black;
+  line-height: 1;
+
+  @include breakpoint($desktop-small) {
+    font-size: 60px;
+  }
+}
+
+.text-l { /* link lists */
+  font-family: $font-family--roboto;
+  font-weight: 700;
+  color: $color--black;
+  line-height: 1.33;
+
+  @include breakpoint($desktop-small) {
+    font-size: 33px;
+  }
+}
+
+.text-m { /* section subheader */
+  font-family: $font-family--roboto;
+  font-weight: 700;
+  color: $color--black;
+  line-height: 1.2;
+
+  @include breakpoint($desktop-small) {
+    font-size: 30px;
+  }
+}
+
+.text-m { /* section subheader */
+  font-family: $font-family--roboto;
+  font-weight: 700;
+  color: $color--gold;
+  line-height: 1.2;
+
+  @include breakpoint($desktop-small) {
+    font-size: 30px;
+  }
+}
+
+.text-s { /* dates */
+  font-family: $font-family--roboto;
+  font-weight: 400;
+  color: $color--gold;
+  line-height: 1.7;
+
+  @include breakpoint($desktop-small) {
+    font-size: 26px;
+  }
+}
+
+.text-xs { /* team member titles */
+  font-family: $font-family--roboto;
+  font-weight: 400;
+  color: $color--gold;
+  line-height: 1;
+
+  @include breakpoint($desktop-small) {
+    font-size: 24px;
+  }
+}
+
+.text-xxs { /* paragraphs */
+  font-family: $font-family--roboto;
+  font-weight: 400;
+  color: $color--black;
+  line-height: 1.5;
+
+  @include breakpoint($desktop-small) {
+    font-size: 16px;
+  }
+}
+
+
+// Specialty Text Styles
+
+.header-shadow { /* faded section header */
+  font-family: $font-family--roboto;
+  font-weight: 700;
+  color: $color--slate;
+  line-height: 1;
+
+  &.dark {
+    color: $color--gray-dark;
+  }
+
+  @include breakpoint($desktop-small) {
+    font-size: 140px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}

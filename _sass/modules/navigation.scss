@@ -1,0 +1,39 @@
+.nav {
+  @include breakpoint($desktop-small) {
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .logo {
+    position: absolute;
+    left: $spacing--xl;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 115px;
+  }
+
+  .nav-items {
+    position: absolute;
+    right: 50px;
+    top: 40px;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-left: 50px;
+  }
+
+  .nav-link { /* nav bar text */
+    font-family: $font-family--roboto;
+    font-weight: 700;
+    color: $color--white;
+    line-height: 1;
+
+    @include breakpoint($desktop-small) {
+      font-size: 24px;
+    }
+  }
+}
