@@ -6,7 +6,7 @@
 <title>{{ page.title }}</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 <!-- Bootstrap core CSS -->
-<link href="/css/style.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
 {% include favicon.html %}
 </head>
 
@@ -14,19 +14,19 @@
 
   <!-- Navigation -->
   <nav class='nav'>
-    <img class='logo' src='/images/logo.png' />
+    <img class='logo' src='{{ site.baseurl }}/images/logo.png' />
     <div class='hamburger' id='nav-hamburger'>
       <span class='hamburger-line'></span>
       <span class='hamburger-line'></span>
       <span class='hamburger-line'></span>
     </div>
     <ul class='nav-items' id='nav-items'>
-      <li class="nav-item"><a class="nav-link" href="/#mission">Mission</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#team">Team</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#news">News</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#links">Links</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#mission">Mission</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#team">Team</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#news">News</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#links">Links</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#faq">FAQ</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#contact">Contact</a></li>
     </ul>
   </nav>
 

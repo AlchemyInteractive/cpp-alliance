@@ -22,9 +22,6 @@ url: https://alchemyinteractive.github.io # the base hostname & protocol for you
 twitter_username: jekyllrb
 github_username:  jekyll
 
-assets:
-  baseurl: /cpp-alliance
-
 # Build settings
 markdown: kramdown
 theme: minima
