@@ -14,7 +14,7 @@
 
   <!-- Navigation -->
   <nav class='nav'>
-    <img class='logo' src='/images/logo.png' />
+    <img class='logo' src='/images/logo.svg' />
     <div class='hamburger' id='nav-hamburger'>
       <span class='hamburger-line'></span>
       <span class='hamburger-line'></span>
@@ -32,18 +32,59 @@
 
   {{ content }}
 
-  <footer class="footerBg">
-  <div class="container">
-  <p class="m-0 text-center text-white">Copyright &copy; 2018, The C Plus Plus Alliance, Inc.
-  <!-- <address> VF missing style -->
-  <br>Contact: <!-- <a href="mailto:info@cppalliance.com"> -->info@cppalliance.com <!-- </a> -->
-  <!-- </address> -->
-  </p>
-  </div>
+  <!-- Connect with us section-->
+  <section class="section contact" id="contact">
+    <div class='section-title'>
+      <h2 class='header text-xl'>Connect</h2>
+      <h2 class='header-shadow'>Connect</h2>
+    </div>
+    <div class='contact-content'>
+      <div class='row row-sm'>
+        <div class='col-fourth col-fourth-sm'>
+          <a class='social-icon' href="https://github.com/CPPAlliance">
+            <div class='social-icon-img-wrapper'>
+              <img class='social-icon-img github' src='/images/icons/github.svg' />
+            </div>
+            <span class='social-icon-text'>GitHub</span>
+          </a>
+        </div>
+        <div class='col-fourth col-fourth-sm'>
+          <a class='social-icon' href="https://www.facebook.com/CPPAlliance/">
+            <div class='social-icon-img-wrapper'>
+              <img class='social-icon-img facebook' src='/images/icons/facebook.svg' />
+            </div>
+            <span class='social-icon-text'>Facebook</span>
+          </a>
+        </div>
+        <div class='col-fourth col-fourth-sm'>
+          <a class='social-icon' href="https://twitter.com/cppalliance">
+            <div class='social-icon-img-wrapper'>
+              <img class='social-icon-img twitter' src='/images/icons/twitter.svg' />
+            </div>
+            <span class='social-icon-text'>Twitter</span>
+          </a>
+        </div>
+        <div class='col-fourth col-fourth-sm'>
+          <a class='social-icon' href="https://www.linkedin.com/in/cppalliance/">
+            <div class='social-icon-img-wrapper'>
+              <img class='social-icon-img linkedin' src='/images/icons/linkedin.svg' />
+            </div>
+            <span class='social-icon-text'>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class='footer'>
+    <p class='text-xxs footer-text'>
+      <span class='line'>&copy; 2018, The C Plus Plus Alliance, Inc.</span>
+      <span class='line'>Contact us at: <a href='mailto:info@cppalliance.com'>info@cppalliance.com</a></span>
+    </p>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="/js/main.js"></script>
+  <script src='/js/main.js'></script>
 
 </body>
 </html>
