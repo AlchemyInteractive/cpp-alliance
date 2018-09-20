@@ -150,3 +150,17 @@
     }
   }
 }
+
+.mobile-only {
+  @include breakpoint($desktop-small) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  display: none;
+
+  @include breakpoint($desktop-small) {
+    display: block;
+  }
+}
