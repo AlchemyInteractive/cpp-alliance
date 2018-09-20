@@ -6,7 +6,7 @@
 <title>{{ page.title }}</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 <!-- Bootstrap core CSS -->
-<link href="/css/style.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
 {% include favicon.html %}
 </head>
 
@@ -14,19 +14,19 @@
 
   <!-- Navigation -->
   <nav class='nav'>
-    <img class='logo' src='/images/logo.svg' />
+    <img class='logo' src='{{ site.baseurl }}/images/logo.svg' />
     <div class='hamburger' id='nav-hamburger'>
       <span class='hamburger-line'></span>
       <span class='hamburger-line'></span>
       <span class='hamburger-line'></span>
     </div>
     <ul class='nav-items' id='nav-items'>
-      <li class="nav-item"><a class="nav-link" href="/#mission">Mission</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#team">Team</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#news">News</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#links">Links</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#mission">Mission</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#team">Team</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#news">News</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#links">Links</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#faq">FAQ</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -43,7 +43,7 @@
         <div class='col-fourth col-fourth-sm'>
           <a class='social-icon' href="https://github.com/CPPAlliance">
             <div class='social-icon-img-wrapper'>
-              <img class='social-icon-img github' src='/images/icons/github.svg' />
+              <img class='social-icon-img github' src='{{ site.baseurl }}/images/icons/github.svg' />
             </div>
             <span class='social-icon-text'>GitHub</span>
           </a>
@@ -51,7 +51,7 @@
         <div class='col-fourth col-fourth-sm'>
           <a class='social-icon' href="https://www.facebook.com/CPPAlliance/">
             <div class='social-icon-img-wrapper'>
-              <img class='social-icon-img facebook' src='/images/icons/facebook.svg' />
+              <img class='social-icon-img facebook' src='{{ site.baseurl }}/images/icons/facebook.svg' />
             </div>
             <span class='social-icon-text'>Facebook</span>
           </a>
@@ -59,7 +59,7 @@
         <div class='col-fourth col-fourth-sm'>
           <a class='social-icon' href="https://twitter.com/cppalliance">
             <div class='social-icon-img-wrapper'>
-              <img class='social-icon-img twitter' src='/images/icons/twitter.svg' />
+              <img class='social-icon-img twitter' src='{{ site.baseurl }}/images/icons/twitter.svg' />
             </div>
             <span class='social-icon-text'>Twitter</span>
           </a>
@@ -67,7 +67,7 @@
         <div class='col-fourth col-fourth-sm'>
           <a class='social-icon' href="https://www.linkedin.com/in/cppalliance/">
             <div class='social-icon-img-wrapper'>
-              <img class='social-icon-img linkedin' src='/images/icons/linkedin.svg' />
+              <img class='social-icon-img linkedin' src='{{ site.baseurl }}/images/icons/linkedin.svg' />
             </div>
             <span class='social-icon-text'>LinkedIn</span>
           </a>
@@ -84,7 +84,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src='/js/main.js'></script>
+  <script src='{{ site.baseurl }}/js/main.js'></script>
 
 </body>
 </html>
