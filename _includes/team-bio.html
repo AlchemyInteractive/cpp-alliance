@@ -1,40 +1,43 @@
-<section>
+<section class='section team'>
   <!-- member info section-->
-  <div>
-    <h3>{{ page.title }}</h3>
-    <p class="subhead">{{ page.title }}</p>
-    <p class="emailS">
-      {% if page.email %}
-      <a href="mailto:{{ page.email }}">{{ page.email }}</a> |
-      {% endif %}
-      {% if page.site %}
-      <a href="{{ page.site }}">{{ page.site-text }}</a> |
-      {% endif %}
-      {% if page.resume %}
-      <a href="{{ page.resume }}"><i class="fa fa-file-text"></i></a>
-      {% endif %}
-      {% if page.stack-overflow %}
-      <a href="{{ page.stack-overflow }}"><i class="fa fa-stack-overflow"></i></a>
-      {% endif %}
-      {% if page.github %}
-      <a href="{{ page.github }}"><i class="fa fa-github"></i></a>
-      {% endif %}
-      {% if page.linkedin %}
-      <a href="{{ page.linkedin }}"><i class="fa fa-linkedin"></i></a>
-      {% endif %}
-      {% if page.twitter %}
-      <a href="{{ page.twitter }}"><i class="fa fa-twitter"></i></a>
-      {% endif %}
-      {% if page.facebook %}
-      <a href="{{ page.facebook }}"><i class="fa fa-facebook"></i></a>
-      {% endif %}
-    </p>
+    <!-- member image-->
+  <img class='team-member-img' src="{{ site.baseurl }}/images/people/{{ page.id }}.jpg" alt="{{ page.member-name }}" />
+
+  <div class='bio'>
+    <h3 class='text-m name'>{{ page.member-name }}</h3>
+    <p class="text-xs title">{{ page.title }}</p>
+
+     <div class='team-contact'>
+        {% if page.email %}
+        <a href="mailto:{{ page.email }}">{{ page.email }}</a> |
+        {% endif %}
+        {% if page.site %}
+        <a href="{{ page.site }}">{{ page.site-text }}</a> |
+        {% endif %}
+        {% if page.resume %}
+        <a href="{{ page.resume }}"><i class="fa fa-file-text"></i></a>
+        {% endif %}
+        {% if page.stack-overflow %}
+        <a href="{{ page.stack-overflow }}"><i class="fa fa-stack-overflow"></i></a>
+        {% endif %}
+        {% if page.github %}
+        <a href="{{ page.github }}"><i class="fa fa-github"></i></a>
+        {% endif %}
+        {% if page.linkedin %}
+        <a href="{{ page.linkedin }}"><i class="fa fa-linkedin"></i></a>
+        {% endif %}
+        {% if page.twitter %}
+        <a href="{{ page.twitter }}"><i class="fa fa-twitter"></i></a>
+        {% endif %}
+        {% if page.facebook %}
+        <a href="{{ page.facebook }}"><i class="fa fa-facebook"></i></a>
+        {% endif %}
+      </div>
+
+    <!-- member bio-->
+    <p>{{ page.bio }}</p>
+
+    <a class='all'>View Full Team</a>
   </div>
-
-  <!-- member bio-->
-  <p>{{ page.bio }}</p>
-
-  <!-- member image-->
-  <img src="/people/{{ page.id }}.jpg" alt="{{ page.title }}"/>
 
 </section>

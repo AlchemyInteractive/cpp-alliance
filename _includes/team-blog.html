@@ -1,15 +1,18 @@
 <!-- Blog section-->
 {% assign n = site.categories[{{page.team-id}}] | size %}
 {% if n != 0 %}
-<section>
-  <h3>Blog</h3>
-
-  {% for post in site.categories[{{page.team-id}}] %}
-  <div>
-    <span>{{ post.date | date: "%m/%d/%Y"}}</span>
-    <a class="innerboldTxt" href="{{ post.url }}">{{ post.title }}</a>
-    <p>{{ post.excerpt }}</p>
+<section class="section news" id='news'>
+  <div class='section-title'>
+    <h2 class='header text-xl'>Blog</h2>
+    <h2 class='header-shadow'>Blog</h2>
   </div>
+
+  {% for post in site.categories[{{page.id}}] %}
+    <div>
+      <span>{{ post.date | date: "%m/%d/%Y"}}</span>
+      <a class="innerboldTxt" href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </div>
   {% endfor %}
 
 </section>
