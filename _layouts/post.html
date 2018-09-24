@@ -1,22 +1,14 @@
 ---
 layout: default
 ---
-{% include top-title.html heading="Post" %}
+{% include top-title.html header="Post" mobileHeader="" subheader="" %}
 
-<section class="innerSection innerBlogContainer">
-    <div class="container">
-        <div class="row">
-        <div class="col-lg-12 blogInner">
+<section>
 
-        <article>
-        <div class="blogContainer">
-        <span>{{ page.date | date: "%m/%d/%Y"}}</span>
-        <b>{{ page.title }}</b>
-        <p>{{ content }}</p>
-        </div>
-        </article>
+    <article>
+      <span>{{ page.date | date: "%m/%d/%Y"}}</span>
+      <h2>{{ page.title }}</h2>
+      <p>{{ content }}</p>
+    </article>
 
-        </div>
-        </div>
-    </div>
 </section>

@@ -1,0 +1,166 @@
+.content {
+  padding: $spacing--s 0;
+
+
+  @include breakpoint($desktop-small) {
+    padding: $spacing--xxl 0;
+  }
+
+  @include breakpoint($desktop-large) {
+    padding: 60px 0;
+  }
+}
+
+.section {
+  padding: 50px $spacing--l;
+
+
+  @include breakpoint($desktop-small) {
+    padding: 60px 100px;
+  }
+
+  @include breakpoint($desktop-large) {
+    padding: 90px 245px;
+  }
+
+  .section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: $spacing--xs;
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: $spacing--m;
+    }
+
+    @include breakpoint($desktop-large) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .header {
+    color: $color--gold;
+    position: relative;
+    z-index: $z-top;
+  }
+
+  .header-shadow {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-subheader {
+    margin-bottom: $spacing--s;
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: $spacing--l;
+    }
+
+    @include breakpoint($desktop-large) {
+      margin-bottom: 35px;
+    }
+  }
+
+}
+
+.col-half {
+  width: 100%;
+  @include breakpoint($desktop-small) {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+}
+
+.col-third {
+  margin-bottom: 35px;
+  width: 100%;
+
+  @include breakpoint($desktop-small) {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 12px;
+    margin-bottom: $spacing--l;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @include breakpoint($desktop-large) {
+    padding: 0 17px;
+    margin-bottom: 35px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.row {
+  &.row-sm {
+    display: flex;
+  }
+
+  @include breakpoint($desktop-small) {
+      display: flex;
+  }
+}
+
+.col-fourth {
+  width: 100%;
+
+  &.col-fourth-sm {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @include breakpoint($desktop-small) {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 55px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.mobile-only {
+  @include breakpoint($desktop-small) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  display: none;
+
+  @include breakpoint($desktop-small) {
+    display: block;
+  }
+}
