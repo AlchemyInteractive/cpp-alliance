@@ -2,17 +2,17 @@
 layout: default
 title: News
 ---
-{% include top-title.html heading="News" %}
+{% include top-title.html header="News" mobileHeader='News' subheader="News" backgroundImage='/images/homepage-hero-bg.png' %}
 
 <!-- News -->
 <section class="section">
   <div class="container">
 
     {% for post in site.posts %}
-    <div>
-      <span>{{ post.date | date: "%m/%d/%Y"}}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
+    <div class='news-wrapper'>
+      <span class='news-date text-xs'>{{ post.date | date: "%m/%d/%Y"}}</span>
+      <a class='news-title text-m' href="{{ post.url }}">{{ post.title }}</a>
+      <p class='news-excerpt'>{{ post.excerpt }}</p>
     </div>
     {% endfor %}
 

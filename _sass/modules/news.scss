@@ -1,0 +1,35 @@
+.news-wrapper {
+  background: $color--gray-medium;
+  padding: $spacing--m $spacing--m $spacing--xl;
+  margin-bottom: $spacing--m;
+
+  .news-date {
+    display: block;
+    margin-bottom: $spacing--xxs;
+  }
+
+  .news-title {
+    color: $color--black;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: $spacing--s;
+    display: block;
+  }
+
+  p {
+    font-family: $font-family--roboto;
+    font-weight: 400;
+    color: $color--black;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    font-size: 0.875rem; /* 14px */
+
+    @include breakpoint($desktop-large) {
+      font-size: 1.625rem; /* 26px */
+    }
+  }
+
+  a {
+    color: $color--black;
+  }
+}
