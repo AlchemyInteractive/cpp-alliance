@@ -10,3 +10,15 @@
 .news-title {
   display: block;
 }
+
+.news-list-item {
+  margin-bottom: $spacing--l;
+
+  @include breakpoint($desktop-small) {
+    margin-bottom: 35px;
+  }
+
+  @include breakpoint($desktop-large) {
+    margin-bottom: 40px;
+  }
+}

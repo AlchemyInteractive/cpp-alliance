@@ -41,7 +41,7 @@
 .section.contact {
   padding: 55px $spacing--l 55px;
   text-align: center;
-  /*background: url('/images/contact-bg.png') no-repeat center/cover;*/
+  background: url('/images/contact-bg.png') no-repeat center/cover;
 
   @include breakpoint($desktop-small) {
     padding: 115px 100px 100px;

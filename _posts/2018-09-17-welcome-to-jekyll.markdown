@@ -1,5 +1,6 @@
 ---
 layout: post
+nav-class: dark
 title:  "Welcome to Jekyll!"
 date:   2018-09-17 11:29:03 -0700
 categories: jekyll update
