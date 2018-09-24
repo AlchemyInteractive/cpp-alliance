@@ -1,6 +1,10 @@
 .slack {
   .margin-bottom {
-    margin-bottom: 20px;
+    margin-bottom: $spacing--xs;
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: $spacing--m;
+    }
   }
 
   .header-shadow {
