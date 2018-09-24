@@ -16,6 +16,7 @@
   .team-member-img {
     height: 325px;
     margin-bottom: 40px;
+    object-fit: cover;
 
     @include breakpoint($desktop-small) {
       order: 2;
