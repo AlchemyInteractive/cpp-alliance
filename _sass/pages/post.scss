@@ -101,6 +101,12 @@
       padding: 50px 60px;
       width: 34%;
     }
+
+    .news-date {
+      @include breakpoint($desktop-small) {
+        display: none;
+      }
+    }
   }
 
   .recent-post-header {
@@ -126,12 +132,6 @@
   .all {
     @include breakpoint($desktop-small) {
       margin-top: 55px;
-    }
-  }
-
-  .news-date {
-    @include breakpoint($desktop-small) {
-      display: none;
     }
   }
 
