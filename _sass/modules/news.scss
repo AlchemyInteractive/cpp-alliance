@@ -1,8 +1,15 @@
+.news-index {
+
+  @include breakpoint($desktop-small) {
+    padding: 105px 160px;
+  }
+}
+
 .news-wrapper {
   padding: $spacing--m 0 $spacing--xl;
 
   @include breakpoint($desktop-small) {
-    padding: $spacing--m $spacing--m $spacing--xl;
+    padding: $spacing--m 30% $spacing--m 0;
     margin-bottom: $spacing--m;
   }
 
@@ -15,6 +22,17 @@
     margin-top: 15px;
     display: block;
     text-decoration: underline;
+
+    @include breakpoint($desktop-small) {
+      display: none;
+    }
+  }
+
+  .news-text-wrapper {
+
+    @include breakpoint($desktop-small) {
+      flex: 1;
+    }
   }
 
   .news-title {
@@ -25,16 +43,21 @@
     display: block;
   }
 
-  p {
-    font-family: $font-family--roboto;
-    font-weight: 400;
-    color: $color--black;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-    font-size: 0.875rem; /* 14px */
+  .news-flex {
+    @include breakpoint($desktop-small) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
 
-    @include breakpoint($desktop-large) {
-      font-size: 1.625rem; /* 26px */
+  .news-image {
+    display: none;
+
+    @include breakpoint($desktop-small) {
+      display: block;
+      width: 130px;
+      margin-left: 30px;
     }
   }
 
