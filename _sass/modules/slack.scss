@@ -17,12 +17,6 @@
     h4, p {
       margin-bottom: $spacing--s;
     }
-
-    @include breakpoint($desktop-small) {
-      h4 {
-        margin-bottom: $spacing--l;
-      }
-    }
   }
 
   .header-shadow {
