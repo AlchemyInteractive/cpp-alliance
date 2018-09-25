@@ -117,8 +117,7 @@ img {
   font-size: 0.875rem; /* 14px */
 
   @include breakpoint($desktop-small) {
-    line-height: 1.33;
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.9rem;
   }
 
   @include breakpoint($desktop-large) {
@@ -158,18 +157,10 @@ img {
 }
 
 .formatted-text {
-  li:before {
-    content: '•';
-    color: $color--gold;
-    font-size: 2em;
-    padding-right: $spacing--s;
-    position: relative;
-    top: 0.15em;
-    line-height: 0;
+  @include breakpoint($desktop-small) {
+    margin-bottom: $spacing--m;
   }
-}
 
-.formatted-text {
   p,
   li {
     margin-bottom: $spacing--s;
@@ -183,8 +174,31 @@ img {
     }
   }
 
-  @include breakpoint($desktop-small) {
-    margin-bottom: $spacing--m;
+  li {
+    position: relative;
+    padding-left: $spacing--l;
+
+    @include breakpoint($desktop-large) {
+      padding-left: 35px;
+    }
+  }
+
+  li:before {
+    content: '•';
+    color: $color--gold;
+    font-size: 2em;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    line-height: 0;
+
+    @include breakpoint($desktop-small) {
+      top: 8px;
+    }
+
+    @include breakpoint($desktop-large) {
+      top: 12px;
+    }
   }
 }
 
