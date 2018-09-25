@@ -117,8 +117,7 @@ img {
   font-size: 0.875rem; /* 14px */
 
   @include breakpoint($desktop-small) {
-    line-height: 1.33;
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.9rem;
   }
 
   @include breakpoint($desktop-large) {
