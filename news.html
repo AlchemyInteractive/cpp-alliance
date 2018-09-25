@@ -1,18 +1,31 @@
 ---
 layout: default
+nav-class: dark
 title: News
 ---
-{% include top-title.html heading="News" %}
 
 <!-- News -->
-<section class="section">
-  <div class="container">
+<section class="section news-index">
+  <div class="news-container">
+
+    <div class='section-title'>
+      <h2 class='header text-xl'>News</h2>
+      <h2 class='header-shadow'>News</h2>
+    </div>
 
     {% for post in site.posts %}
-    <div>
-      <span>{{ post.date | date: "%m/%d/%Y"}}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
+    <div class='news-wrapper'>
+      <span class='news-date text-xs'>{{ post.date | date: "%m/%d/%Y"}}</span>
+      <div class='flex-row'>
+        <div class='news-text-wrapper'>
+          <a class='news-title text-m' href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <p class='text-xxs'>{{ post.short-description }}</p>
+        </div>
+        {% if post.image %}
+        <img class='news-image' src="{{ post.image | prepend: site.baseurl }}">
+        {% endif %}
+        <a class='text-xxs news-link' href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
+      </div>
     </div>
     {% endfor %}
 
