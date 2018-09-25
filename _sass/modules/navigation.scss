@@ -1,13 +1,13 @@
 .nav {
-  height: 75px;
+  height: 100px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: $z-above-top;
 
-  @include breakpoint($desktop-large) {
-    height: 100px;
+  @include breakpoint($desktop-small) {
+    height: 120px;
   }
 
   &.dark {
@@ -16,18 +16,14 @@
   }
 
   .logo {
-    width: 50px;
+    width: 77px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: $spacing--s;
 
     @include breakpoint($desktop-small) {
-      left: 50px;
-    }
-
-    @include breakpoint($desktop-large) {
-      width: 70px;
+      width: 90px;
       left: $spacing--xl;
     }
   }
@@ -105,7 +101,7 @@
       display: block;
       padding-top: 0;
       position: absolute;
-      right: 40px;
+      right: 0;
       top: 50%;
       transform: translateY(-50%);
       left: auto;
@@ -118,10 +114,6 @@
         top: 40px;
       }
     }
-
-    @include breakpoint($desktop-large) {
-      right: 50px;
-    }
   }
 
   .nav-item {
@@ -129,7 +121,7 @@
 
     @include breakpoint($desktop-small) {
       padding-top: 0;
-      margin-left: 45px;
+      margin-right: 45px;
       display: inline-block;
     }
 
