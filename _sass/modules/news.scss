@@ -1,5 +1,4 @@
 .news-wrapper {
-  background: $color--gray-medium;
   padding: $spacing--m $spacing--m $spacing--xl;
   margin-bottom: $spacing--m;
 
@@ -31,5 +30,30 @@
 
   a {
     color: $color--black;
+  }
+}
+
+.news-date {
+  margin-bottom: -3px;
+
+  @include breakpoint($desktop-small) {
+    margin-bottom: 2px;
+  }
+}
+
+.news-date,
+.news-title {
+  display: block;
+}
+
+.news-list-item {
+  margin-bottom: $spacing--l;
+
+  @include breakpoint($desktop-small) {
+    margin-bottom: 35px;
+  }
+
+  @include breakpoint($desktop-large) {
+    margin-bottom: 40px;
   }
 }

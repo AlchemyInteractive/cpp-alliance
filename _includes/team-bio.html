@@ -1,40 +1,42 @@
-<section>
+<section class='section team'>
   <!-- member info section-->
-  <div>
-    <h3>{{ page.title }}</h3>
-    <p class="subhead">{{ page.title }}</p>
-    <p class="emailS">
-      {% if page.email %}
-      <a href="mailto:{{ page.email }}">{{ page.email }}</a> |
-      {% endif %}
-      {% if page.site %}
-      <a href="{{ page.site }}">{{ page.site-text }}</a> |
-      {% endif %}
-      {% if page.resume %}
-      <a href="{{ page.resume }}"><i class="fa fa-file-text"></i></a>
-      {% endif %}
-      {% if page.stack-overflow %}
-      <a href="{{ page.stack-overflow }}"><i class="fa fa-stack-overflow"></i></a>
-      {% endif %}
-      {% if page.github %}
-      <a href="{{ page.github }}"><i class="fa fa-github"></i></a>
-      {% endif %}
-      {% if page.linkedin %}
-      <a href="{{ page.linkedin }}"><i class="fa fa-linkedin"></i></a>
-      {% endif %}
-      {% if page.twitter %}
-      <a href="{{ page.twitter }}"><i class="fa fa-twitter"></i></a>
-      {% endif %}
-      {% if page.facebook %}
-      <a href="{{ page.facebook }}"><i class="fa fa-facebook"></i></a>
-      {% endif %}
-    </p>
+    <!-- member image-->
+  <div class='team-member-img-wrapper'>
+    <img class='team-member-img' src="{{ site.baseurl }}/images/people/{{ page.id }}.jpg" alt="{{ page.member-name }}" />
   </div>
 
-  <!-- member bio-->
-  <p>{{ page.bio }}</p>
+  <div class='bio'>
+    <h3 class='text-m name'>{{ page.member-name }}</h3>
+    <p class="text-xs title">{{ page.title }}</p>
 
-  <!-- member image-->
-  <img src="/people/{{ page.id }}.jpg" alt="{{ page.title }}"/>
+     <div class='social-icons'>
+        {% if page.email %}
+        <a href="mailto:{{ page.email }}"><img class='social-icon email' src="{{ site.baseurl }}/images/icons/email-gold.svg" /></a>
+        {% endif %}
+        {% if page.site %}
+        <a href="{{ page.site }}"><img class='social-icon web' src="{{ site.baseurl }}/images/icons/web-gold.svg" /></a>
+        {% endif %}
+        {% if page.resume %}
+        <a href="{{ page.resume }}"><img class='social-icon resume' src="{{ site.baseurl }}/images/icons/resume-gold.svg" /></a>
+        {% endif %}
+        {% if page.stack-overflow %}
+        <a href="{{ page.stack-overflow }}"><img class='social-icon stack' src="{{ site.baseurl }}/images/icons/stack-overflow-gold.svg" /></a>
+        {% endif %}
+        {% if page.github %}
+        <a href="{{ page.github }}"><img class='social-icon github' src="{{ site.baseurl }}/images/icons/github-gold.svg" /></a>
+        {% endif %}
+        {% if page.linkedin %}
+        <a href="{{ page.linkedin }}"><img class='social-icon linkedin' src="{{ site.baseurl }}/images/icons/linkedin-gold.svg" /></a>
+        {% endif %}
+        {% if page.twitter %}
+        <a href="{{ page.twitter }}"><img class='social-icon twitter' src="{{ site.baseurl }}/images/icons/twitter-gold.svg" /></a>
+        {% endif %}
+      </div>
+
+    <!-- member bio-->
+    <p class='text-xxs'>{{ page.bio }}</p>
+
+    <a class='text-xxs all' href="{{ site.baseurl }}/#team">View Full Team</a>
+  </div>
 
 </section>
