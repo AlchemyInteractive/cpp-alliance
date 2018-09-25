@@ -21,13 +21,13 @@ layout: default
         {% if page.author %}
         <div class='author'>
           <!-- list of all potential authors -->
-          {% if page.author-image %}
-            <img class='author-img' src='{{ site.baseurl }}/images/people/{{page.author-image}}' alt={{page.author}} />
+          {% if page.author-id %}
+            <img class='author-img' src='{{ site.baseurl }}/images/people/{{page.author-id}}.jpg' alt={{page.author}} />
           {% endif %}
 
           <span class='text-xxs author-name'>by
-            {% if page.author-link %}
-              <a class='link' href='{{ site.baseurl }}/people/{{page.author-link}}'>
+            {% if page.author-id %}
+              <a class='link' href='{{ site.baseurl }}/people/{{page.author-id}}'>
             {% endif %}
 
             {{ page.author }}
