@@ -100,7 +100,16 @@
   }
 
   .activity-title {
-    margin: $spacing--xs 0 $spacing--xxs;
+    line-height: 1;
+    margin: $spacing--xs 0 $spacing--xs;
+
+    @include breakpoint($desktop-small) {
+      margin: $spacing--l 0 $spacing--s;
+    }
+
+    @include breakpoint($desktop-large) {
+      margin: 50px 0 $spacing--s;
+    }
   }
 
   .activity-col {
@@ -173,16 +182,6 @@
       @include breakpoint($desktop-large) {
         height: 120px;
       }
-    }
-  }
-
-  .activity-title {
-    @include breakpoint($desktop-small) {
-      margin: $spacing--l 0;
-    }
-
-    @include breakpoint($desktop-large) {
-      margin: 50px 0 35px;
     }
   }
 }
