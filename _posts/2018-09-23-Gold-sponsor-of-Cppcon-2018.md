@@ -2,6 +2,7 @@
 layout: post
 nav-class: dark
 categories: company
+short-description: 'The Alliance is a Gold sponsor for CppCon 2018. This conference is the annual, week-long face-to-face gathering for the entire C++ community. The conference is organized by the C++ community for the community. Attendees enjoy inspirational talks and a friendly atmosphere designed to help individuals learn from each other, meet interesting people, and generally have a stimulating experience.'
 ---
 <p>
 The Alliance is a Gold sponsor for

@@ -1,25 +1,45 @@
-.news-index {
+.news-container {
+  margin-top: $spacing--xs;
 
   @include breakpoint($desktop-small) {
-    padding: 105px 160px;
+    margin-top: $spacing--l;
+  }
+  @include breakpoint($desktop-medium) {
+    margin-top: 50px;
+  }
+  @include breakpoint($desktop-large) {
+    margin-top: 70px;
+    margin-bottom: $spacing--l;
   }
 }
 
 .news-wrapper {
-  padding: $spacing--m 0 $spacing--xl;
+  padding: $spacing--m 0;
+
+  &:last-of-type {
+    padding: $spacing--m 0 $spacing--xs;
+  }
 
   @include breakpoint($desktop-small) {
-    padding: $spacing--m 30% $spacing--m 0;
-    margin-bottom: $spacing--m;
+    padding: $spacing--m 38% $spacing--m 0;
   }
+
+  @include breakpoint($desktop-large) {
+    padding: $spacing--m 30% $spacing--m 0;
+  }
+
 
   .news-date {
     display: block;
     margin-bottom: $spacing--xxs;
+
+    @include breakpoint($desktop-large) {
+      margin-bottom: $spacing--s;
+    }
   }
 
   .news-link {
-    margin-top: 15px;
+    margin-top: $spacing--s;
     display: block;
     text-decoration: underline;
 
@@ -36,14 +56,11 @@
   }
 
   .news-title {
-    color: $color--black;
-    font-weight: bold;
     text-decoration: underline;
     margin-bottom: $spacing--s;
-    display: block;
   }
 
-  .news-flex {
+  .flex-row {
     @include breakpoint($desktop-small) {
       display: flex;
       flex-direction: row;
@@ -58,6 +75,10 @@
       display: block;
       width: 130px;
       margin-left: 30px;
+    }
+
+    @include breakpoint($desktop-large) {
+      width: 200px;
     }
   }
 

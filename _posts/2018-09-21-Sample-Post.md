@@ -6,8 +6,7 @@ title: "Sample Article"
 hero-image: sample-post.jpeg
 caption: "Pellentesque id leo. Nullam pharetra."
 author: Jens Weller
-author-link: jens.html
-author-image: jens.jpg
+author-id: jens
 short-description: 'Conveniently promote front-end vortals before ethical paradigms. Dynamically fabricate multimedia based outsourcing with an expanded array of bandwidth. Phosfluorescently utilize B2C bandwidth with user friendly paradigms. Dynamically streamline vertical leadership for.'
 
 ---
