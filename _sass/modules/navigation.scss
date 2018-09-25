@@ -1,14 +1,10 @@
 .nav {
-  height: 75px;
+  height: 100px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: $z-above-top;
-
-  @include breakpoint($desktop-small) {
-    height: 100px;
-  }
 
   &.dark {
     position: relative;
@@ -16,7 +12,7 @@
   }
 
   .logo {
-    width: 50px;
+    width: 77px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
