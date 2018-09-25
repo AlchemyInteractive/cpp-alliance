@@ -1,9 +1,27 @@
 .slack {
-  .margin-bottom {
-    margin-bottom: $spacing--xs;
+  .slack-link,
+  .section-title {
+    margin-bottom: $spacing--m;
 
     @include breakpoint($desktop-small) {
-      margin-bottom: $spacing--m;
+      margin-bottom: $spacing--xl;
+    }
+  }
+
+  .slack-paragraph {
+    margin-bottom: $spacing--s;
+  }
+
+  .slack-list-item {
+    margin-top: $spacing--l;
+    h4, p {
+      margin-bottom: $spacing--s;
+    }
+
+    @include breakpoint($desktop-small) {
+      h4 {
+        margin-bottom: $spacing--l;
+      }
     }
   }
 
