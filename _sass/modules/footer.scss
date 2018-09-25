@@ -41,9 +41,12 @@
 .section.contact {
   padding: 55px $spacing--l 55px;
   text-align: center;
-  background: url('/images/contact-bg.png') no-repeat center/cover;
+  background: url('/cpp-alliance/images/contact-bg-mobile.png') no-repeat center/cover;
+  /* background: url('images/contact-bg-mobile.png') no-repeat center/cover; */ /* will need to update for prod */
 
   @include breakpoint($desktop-small) {
+    background: url('/cpp-alliance/images/contact-bg.png') no-repeat center/cover;
+    /*background: url('/images/contact-bg.png') no-repeat center/cover;*/ /* will need to update for prod */
     padding: 115px 100px 100px;
   }
 
