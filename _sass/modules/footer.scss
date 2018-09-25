@@ -39,27 +39,27 @@
 }
 
 .section.contact {
-  padding: 55px $spacing--l 55px;
+  padding: 55px $spacing--l 50px;
   text-align: center;
   background: url('/images/contact-bg.png') no-repeat center/cover;
 
   @include breakpoint($desktop-small) {
-    padding: 115px 100px 100px;
+    padding: 115px 100px 65px;
   }
 
   @include breakpoint($desktop-large) {
-    padding: 190px 245px 270px;
+    padding: 190px 245px 225px;
   }
 
   .section-title {
-    margin-bottom: $spacing--l;
+    margin-bottom: $spacing--m;
 
     @include breakpoint($desktop-small) {
-      margin-bottom: 65px;
+      margin-bottom: 35px;
     }
 
     @include breakpoint($desktop-large) {
-      margin-bottom: 95px;
+      margin-bottom: 60px;
     }
   }
 
@@ -90,6 +90,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+    background: $color--faded-black;
+
+    @include breakpoint($desktop-small) {
+      height: 180px;
+      width: 180px;
+    }
+
+    @include breakpoint($desktop-large) {
+      height: 270px;
+      width: 270px;
+    }
   }
 
   .social-icon-img-wrapper {
