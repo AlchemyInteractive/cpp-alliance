@@ -6,6 +6,10 @@
   width: 100%;
   z-index: $z-above-top;
 
+  @include breakpoint($desktop-small) {
+    height: 120px;
+  }
+
   &.dark {
     position: relative;
     background: $color--black;
@@ -19,7 +23,7 @@
     left: $spacing--s;
 
     @include breakpoint($desktop-small) {
-      width: 70px;
+      width: 90px;
       left: $spacing--xl;
     }
   }
