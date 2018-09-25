@@ -1,10 +1,20 @@
 .news-wrapper {
-  padding: $spacing--m $spacing--m $spacing--xl;
-  margin-bottom: $spacing--m;
+  padding: $spacing--m 0 $spacing--xl;
+
+  @include breakpoint($desktop-small) {
+    padding: $spacing--m $spacing--m $spacing--xl;
+    margin-bottom: $spacing--m;
+  }
 
   .news-date {
     display: block;
     margin-bottom: $spacing--xxs;
+  }
+
+  .news-link {
+    margin-top: 15px;
+    display: block;
+    text-decoration: underline;
   }
 
   .news-title {
