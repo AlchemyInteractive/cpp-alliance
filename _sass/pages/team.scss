@@ -123,5 +123,9 @@
     @include breakpoint($desktop-large) {
       padding: 170px 245px 115px;
     }
+
+    .header-shadow {
+      color: $color--slate;
+    }
   }
 }

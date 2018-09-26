@@ -237,6 +237,10 @@
     }
   }
 
+  li {
+    padding-left: 0;
+  }
+
   .news-list-item {
     margin-bottom: $spacing--l;
 
@@ -297,6 +301,7 @@
 
   .link-item {
     margin-bottom: $spacing--m;
+    padding-left: 0;
 
     &:before {
       content: none;

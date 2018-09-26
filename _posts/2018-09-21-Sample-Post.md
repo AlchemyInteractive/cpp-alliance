@@ -3,7 +3,7 @@ layout: post
 nav-class: dark
 categories: vinnie
 title: "Sample Article"
-hero-image: sample-post.jpeg
+hero-image: sample-post.png
 caption: "Pellentesque id leo. Nullam pharetra."
 author: Jens Weller
 author-id: jens
