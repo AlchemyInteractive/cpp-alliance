@@ -17,6 +17,7 @@
 
   .col-right {
     text-align: right;
+    box-sizing: border-box;
 
     @include breakpoint($desktop-small) {
       padding-left: 65px;
