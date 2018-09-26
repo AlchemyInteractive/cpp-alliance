@@ -67,53 +67,15 @@
       margin-bottom: 35px;
     }
   }
-
 }
 
-.col-half {
-  width: 100%;
-  @include breakpoint($desktop-small) {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-  }
+/* for items that must wrap */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.col-third {
-  margin-bottom: 35px;
-  width: 100%;
-
-  @include breakpoint($desktop-small) {
-    width: 33.33%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 12px;
-    margin-bottom: $spacing--l;
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
-  }
-
-  @include breakpoint($desktop-large) {
-    padding: 0 17px;
-    margin-bottom: 35px;
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
-  }
-}
-
+/* for items that consistently stay in a row */
 .row {
   &.row-sm {
     display: flex;
@@ -121,6 +83,77 @@
 
   @include breakpoint($desktop-small) {
       display: flex;
+  }
+}
+
+.col-half {
+  width: 100%;
+
+  @include breakpoint($desktop-small) {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+/* 1 column mobile - 2 column tablet - 3 column desktop */
+.col-third {
+  margin-bottom: 35px;
+  vertical-align: top;
+  width: 100%;
+
+  @include breakpoint($tablet) {
+    width: calc(50% - 17px);
+    padding: 0 17px;
+    display: inline-block;
+
+    &:nth-child(odd) {
+      padding-left: 0;
+    }
+
+    &:nth-child(even) {
+      padding-right: 0;
+    }
+  }
+
+  @include breakpoint($desktop-small) {
+    width: calc(33.33% - 16px);
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 12px;
+    margin-bottom: $spacing--l;
+
+    &:nth-child(odd),
+    &:nth-child(even) {
+      padding: 0 12px;
+    }
+
+    &:nth-child(3n+1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(3n+3) {
+      padding-right: 0;
+    }
+  }
+
+  @include breakpoint($desktop-large) {
+    padding: 0 17px;
+    margin-bottom: 35px;
+    width: calc(33.33% - 23px);
+
+    &:nth-child(odd),
+    &:nth-child(even) {
+      padding: 0 17px;
+    }
+
+    &:nth-child(3n+1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(3n+3) {
+      padding-right: 0;
+    }
   }
 }
 

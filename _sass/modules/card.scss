@@ -2,23 +2,16 @@
   display: block;
 
   .card-img-wrapper {
-    @include breakpoint($desktop-small) {
-      width: 100%;
-      padding-bottom: 84%;
-      position: relative;
-    }
+    width: 100%;
+    padding-bottom: 84%;
+    position: relative;
   }
 
   .card-img {
-    height: 275px;
-    width: 100%;
     object-fit: cover;
-
-    @include breakpoint($desktop-small) {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-    }
+    position: absolute;
+    height: 100%;
+    width: 100%;
   }
 
   .card-text {
