@@ -3,7 +3,7 @@ layout: post
 nav-class: dark
 categories: company
 short-description: 'A new corporate logo is adopted from the conclusion of a contest on Designhill:'
-image: /images/2018-02-22-Corporate-logo-is-adopted.png
+hero-image: 2018-02-22-Corporate-logo-is-adopted.png
 ---
 <p>
 A new corporate logo is adopted from the conclusion of a contest on
