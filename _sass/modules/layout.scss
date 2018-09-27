@@ -174,11 +174,32 @@
     }
   }
 
+  @include breakpoint($tablet) {
+    width: calc(50% - 20px);
+    display: inline-block;
+    padding: 0 $spacing--m;
+
+    &:first-child,
+    &:nth-child(3) {
+      padding-left: 0;
+    }
+
+    &:nth-child(2),
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
   @include breakpoint($desktop-small) {
-    width: 25%;
+    width: calc(25% - 83px);
     display: inline-block;
     vertical-align: top;
     padding: 0 55px;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding: 0 55px;
+    }
 
     &:first-child {
       padding-left: 0;
