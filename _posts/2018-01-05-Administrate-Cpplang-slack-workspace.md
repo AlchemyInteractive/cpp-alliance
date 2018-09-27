@@ -3,6 +3,7 @@ layout: post
 nav-class: dark
 categories: company
 short-description: 'The Alliance is now the owner and administrator of the Cpplang Slack Workspace. This workspace is the premiere and most popular community of C++ enthusiasts and professionals from around the globe.'
+description: The Alliance is now the owner and administrator of the Cpplang Slack Workspace. This workspace is the premiere and most popular community of C++ enthusiasts and professionals from around the globe.
 ---
 <p>
 The Alliance is now the owner and administrator of the
