@@ -1,15 +1,20 @@
 <section class='section team'>
-  <!-- member info section-->
-    <!-- member image-->
-  <div class='team-member-img-wrapper'>
-    <img class='team-member-img' src="{{ site.baseurl }}/images/people/{{ page.id }}.jpg" alt="{{ page.member-name }}" />
+  <div class='section-title'>
+    <h2 class='header text-xl'>Team</h2>
+    <h2 class='header-shadow'>Team</h2>
   </div>
+  <div class='flex-row'>
+    <!-- member info section-->
+    <!-- member image-->
+    <div class='team-member-img-wrapper'>
+      <img class='team-member-img' src="{{ site.baseurl }}/images/people/{{ page.id }}.jpg" alt="{{ page.member-name }}" />
+    </div>
 
   <div class='bio'>
     <h3 class='text-m name'>{{ page.member-name }}</h3>
     <p class="text-xs title">{{ page.position }}</p>
 
-     <div class='social-icons'>
+      <div class='social-icons'>
         {% if page.email %}
         <a href="mailto:{{ page.email | encode_email }}"><img class='social-icon email' src="{{ site.baseurl }}/images/icons/email-gold.svg" /></a>
         {% endif %}
@@ -33,10 +38,11 @@
         {% endif %}
       </div>
 
-    <!-- member bio-->
-    <p class='text-xxs'>{{ page.bio }}</p>
+      <!-- member bio-->
+      <p class='text-xxs'>{{ page.bio }}</p>
 
-    <a class='text-xxs all' href="{{ site.baseurl }}/#team">View Full Team</a>
+      <a class='text-xxs all' href="{{ site.baseurl }}/#team">View Full Team</a>
+    </div>
   </div>
 
 </section>
