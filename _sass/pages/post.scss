@@ -113,6 +113,16 @@
         display: none;
       }
     }
+
+    .news-title {
+      @include breakpoint($desktop-small) {
+        font-size: 1.25rem;
+      }
+
+      @include breakpoint($desktop-large) {
+        font-size: 1.875rem;
+      }
+    }
   }
 
   .recent-post-header {
