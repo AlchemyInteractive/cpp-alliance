@@ -18,10 +18,14 @@
   .titles {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: calc(50% - 25px);
     width: 100%;
     text-align: center;
     transform: translate(-50%, -50%);
+
+    @include breakpoint($desktop-small) {
+      top: 50%;
+    }
   }
 
   .main-header {
