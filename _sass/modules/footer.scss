@@ -16,8 +16,14 @@
 
   .email {
     vertical-align: middle;
-    width: 29vw;
-    max-width: 135px;
+    width: 104px;
+
+    @include breakpoint($desktop-small) {
+      width: 133px;
+    }
+    @include breakpoint($desktop-large) {
+      width: 157px;
+    }
   }
 
   .footer-text,
