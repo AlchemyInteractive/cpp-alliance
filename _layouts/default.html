@@ -19,7 +19,7 @@ type: website
   <!-- Navigation -->
   <nav class='nav {{page.nav-class}}'>
     <a href='{{ site.baseurl }}/'>
-      <img class='logo' src='{{ site.baseurl }}/images/logo.svg' />
+      <img class='logo' alt='cpp-alliance-logo' src='{{ site.baseurl }}/images/logo.svg' />
     </a>
     <div class='hamburger' id='nav-hamburger'>
       <span class='hamburger-line'></span>
@@ -32,7 +32,7 @@ type: website
       <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#news">News</a></li>
       <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#links">Links</a></li>
       <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#faq">FAQ</a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#connect">Connect</a></li>
     </ul>
   </nav>
 
@@ -41,7 +41,7 @@ type: website
   <footer class='footer'>
     <p class='text-xxs footer-text'>
       <span class='line'>&copy; 2018, The C Plus Plus Alliance, Inc.</span>
-      <span class='line'>Contact us at: <a href='mailto:info@cppalliance.com'>info@cppalliance.com</a></span>
+      <span class='line'>Contact us at: <a href='mailto:{{ 'info@cppalliance.com' | encode_email }}'><img class='email' src='{{ site.baseurl }}/images/email.svg' /></a></span>
     </p>
   </footer>
 

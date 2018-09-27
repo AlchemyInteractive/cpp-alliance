@@ -14,6 +14,10 @@
     height: 200px;
   }
 
+  .email {
+    vertical-align: bottom;
+  }
+
   .footer-text,
   a {
     font-size: 0.625rem; /* 10px */
@@ -29,6 +33,10 @@
     }
   }
 
+  a {
+    font-weight: 700;
+  }
+
   .line {
     display: block;
 
@@ -38,7 +46,7 @@
   }
 }
 
-.section.contact {
+.section.connect {
   padding: 55px $spacing--l 50px;
   text-align: center;
   background: url('/cpp-alliance/images/contact-bg-mobile.png') no-repeat center/cover;
@@ -72,7 +80,7 @@
   }
 
   .contact-content {
-    width: 225px;
+    width: 280px;
     margin: 0 auto;
 
     @include breakpoint($desktop-small) {

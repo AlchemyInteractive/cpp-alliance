@@ -74,11 +74,14 @@
     @include breakpoint($desktop-small) {
       display: block;
       width: 130px;
+      height: 130px;
+      object-fit: cover;
       margin-left: 30px;
     }
 
     @include breakpoint($desktop-large) {
       width: 200px;
+      height: 200px;
     }
   }
 
