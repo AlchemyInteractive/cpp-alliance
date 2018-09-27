@@ -13,6 +13,12 @@
     @include breakpoint($desktop-small) {
       width: 66%;
     }
+
+    .news-title {
+      @include breakpoint($desktop-small) {
+        font-size: 2rem;
+      }
+    }
   }
 
   .post-hero {
@@ -123,7 +129,6 @@
 
   .news-title,
   .all {
-
     @include breakpoint($desktop-small) {
       font-size: 1rem;
     }

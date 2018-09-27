@@ -92,9 +92,11 @@
     padding-top: $spacing--l;
     text-align: center;
     transition: $transition-slow;
+    display: none;
 
     &.active {
       top: 0;
+      display: block;
     }
 
     @include breakpoint($desktop-small) {
