@@ -33,6 +33,10 @@
     }
   }
 
+  .footer-text {
+    text-align: center;
+  }
+
   a {
     font-weight: 700;
   }
@@ -79,8 +83,8 @@
     opacity: 0.15;
   }
 
-  .contact-content {
-    width: 280px;
+  .connect-content {
+    width: 270px;
     margin: 0 auto;
 
     @include breakpoint($desktop-small) {
