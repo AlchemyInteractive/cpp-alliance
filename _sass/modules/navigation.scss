@@ -120,7 +120,7 @@
   }
 
   .nav-item {
-    padding-top: 50px;
+    padding-top: $spacing--xxl;
 
     @include breakpoint($desktop-small) {
       padding-top: 0;
@@ -135,7 +135,7 @@
     font-weight: 700;
     color: $color--white;
     line-height: 1;
-    font-size: 1.938rem; /* 31px */
+    font-size: 1.5rem;
     letter-spacing: 0.02em;
 
     @include breakpoint($desktop-small) {
