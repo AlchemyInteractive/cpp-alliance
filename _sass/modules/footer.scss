@@ -15,7 +15,15 @@
   }
 
   .email {
-    vertical-align: bottom;
+    vertical-align: middle;
+    width: 104px;
+
+    @include breakpoint($desktop-small) {
+      width: 133px;
+    }
+    @include breakpoint($desktop-large) {
+      width: 157px;
+    }
   }
 
   .footer-text,
