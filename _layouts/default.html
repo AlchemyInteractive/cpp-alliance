@@ -22,14 +22,50 @@
       <span class='hamburger-line'></span>
       <span class='hamburger-line'></span>
     </div>
-    <ul class='nav-items' id='nav-items'>
-      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#mission">Mission</a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#team">Team</a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#news">News</a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#links">Links</a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#faq">FAQ</a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#connect">Connect</a></li>
-    </ul>
+    <div class='nav-items' id='nav-items'>
+      <div class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#mission">Mission</a></div>
+      <div class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#team">Team</a></div>
+      <div class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#news">News</a></div>
+      <div class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#links">Links</a></div>
+      <div class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#faq">FAQ</a></div>
+      <div class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/#connect">Connect</a></div>
+      <div class='connect-content'>
+        <div class='row row-sm'>
+          <div class='col-fourth col-fourth-sm'>
+            <a class='social-icon' href="https://github.com/CPPAlliance">
+              <div class='social-icon-img-wrapper'>
+                <img class='social-icon-img github' alt='github-logo' src='{{ site.baseurl }}/images/icons/github.svg' />
+              </div>
+              <span class='social-icon-text'>GitHub</span>
+            </a>
+          </div>
+          <div class='col-fourth col-fourth-sm'>
+            <a class='social-icon' href="https://www.facebook.com/CPPAlliance/">
+              <div class='social-icon-img-wrapper'>
+                <img class='social-icon-img facebook' alt='facebook-logo' src='{{ site.baseurl }}/images/icons/facebook.svg' />
+              </div>
+              <span class='social-icon-text'>Facebook</span>
+            </a>
+          </div>
+          <div class='col-fourth col-fourth-sm'>
+            <a class='social-icon' href="https://twitter.com/cppalliance">
+              <div class='social-icon-img-wrapper'>
+                <img class='social-icon-img twitter' alt='twitter-logo' src='{{ site.baseurl }}/images/icons/twitter.svg' />
+              </div>
+              <span class='social-icon-text'>Twitter</span>
+            </a>
+          </div>
+          <div class='col-fourth col-fourth-sm'>
+            <a class='social-icon' href="https://www.linkedin.com/in/cppalliance/">
+              <div class='social-icon-img-wrapper'>
+                <img class='social-icon-img linkedin' alt='linkedin-logo' src='{{ site.baseurl }}/images/icons/linkedin.svg' />
+              </div>
+              <span class='social-icon-text'>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
 
   {{ content }}

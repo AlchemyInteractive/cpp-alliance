@@ -93,6 +93,7 @@
     text-align: center;
     transition: $transition-slow;
     display: none;
+    box-sizing: border-box;
 
     &.active {
       top: 0;
@@ -143,6 +144,20 @@
 
     @include breakpoint($desktop-large) {
       font-size: 1.5rem; /* 24px */
+    }
+  }
+
+  .social-icon {
+    background: none;
+  }
+
+  .connect-content {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include breakpoint($desktop-small) {
+      display: none;
     }
   }
 }
