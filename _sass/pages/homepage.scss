@@ -91,6 +91,14 @@
   }
 
   .section-title {
+    @include breakpoint($tablet) {
+      margin-bottom: $spacing--l;
+    }
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: $spacing--xs;
+    }
+
     @include breakpoint($desktop-large) {
       margin-bottom: 40px;
     }
@@ -122,6 +130,10 @@
   }
 
   .activities-img-wrapper {
+
+    @include breakpoint($tablet) {
+      height: 115px;
+    }
 
     @include breakpoint($desktop-small) {
       height: 105px;
