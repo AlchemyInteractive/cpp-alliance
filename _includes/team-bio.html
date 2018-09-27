@@ -10,13 +10,13 @@
       <img class='team-member-img' src="{{ site.baseurl }}/images/people/{{ page.id }}.jpg" alt="{{ page.member-name }}" />
     </div>
 
-    <div class='bio'>
-      <h3 class='text-m name'>{{ page.member-name }}</h3>
-      <p class="text-xs title">{{ page.title }}</p>
+  <div class='bio'>
+    <h3 class='text-m name'>{{ page.member-name }}</h3>
+    <p class="text-xs title">{{ page.position }}</p>
 
       <div class='social-icons'>
         {% if page.email %}
-        <a href="mailto:{{ page.email }}"><img class='social-icon email' src="{{ site.baseurl }}/images/icons/email-gold.svg" /></a>
+        <a href="mailto:{{ page.email | encode_email }}"><img class='social-icon email' src="{{ site.baseurl }}/images/icons/email-gold.svg" /></a>
         {% endif %}
         {% if page.site %}
         <a href="{{ page.site }}"><img class='social-icon web' src="{{ site.baseurl }}/images/icons/web-gold.svg" /></a>

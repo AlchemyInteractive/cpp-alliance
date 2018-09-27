@@ -14,6 +14,10 @@
     height: 200px;
   }
 
+  .email {
+    vertical-align: bottom;
+  }
+
   .footer-text,
   a {
     font-size: 0.625rem; /* 10px */
@@ -29,169 +33,19 @@
     }
   }
 
+  .footer-text {
+    text-align: center;
+  }
+
+  a {
+    font-weight: 700;
+  }
+
   .line {
     display: block;
 
     @include breakpoint($desktop-small) {
       display: inline-block;
-    }
-  }
-}
-
-.section.contact {
-  padding: 55px $spacing--l 50px;
-  text-align: center;
-  background: url('/cpp-alliance/images/contact-bg-mobile.png') no-repeat center/cover;
-  /* background: url('images/contact-bg-mobile.png') no-repeat center/cover; */ /* will need to update for prod */
-
-  @include breakpoint($desktop-small) {
-    background: url('/cpp-alliance/images/contact-bg.png') no-repeat center/cover;
-    /*background: url('/images/contact-bg.png') no-repeat center/cover;*/ /* will need to update for prod */
-    padding: 115px 100px 65px;
-  }
-
-  @include breakpoint($desktop-large) {
-    padding: 190px 245px 225px;
-  }
-
-  .section-title {
-    margin-bottom: $spacing--m;
-
-    @include breakpoint($desktop-small) {
-      margin-bottom: 35px;
-    }
-
-    @include breakpoint($desktop-large) {
-      margin-bottom: 60px;
-    }
-  }
-
-  .header-shadow {
-    color: $color--white;
-    opacity: 0.15;
-  }
-
-  .contact-content {
-    width: 225px;
-    margin: 0 auto;
-
-    @include breakpoint($desktop-small) {
-      width: 780px;
-    }
-
-    @include breakpoint($desktop-large) {
-      width: 1140px;
-    }
-  }
-
-  .col-fourth {
-    padding: 0;
-  }
-
-  .social-icon {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 52px;
-    width: 52px;
-    background: $color--faded-black;
-
-    @include breakpoint($desktop-small) {
-      height: 180px;
-      width: 180px;
-    }
-
-    @include breakpoint($desktop-large) {
-      height: 270px;
-      width: 270px;
-    }
-  }
-
-  .social-icon-img-wrapper {
-    height: 25px;
-    margin-bottom: $spacing--xxs;
-    display: flex;
-    align-items: flex-end;
-
-    @include breakpoint($desktop-small) {
-      height: 85px;
-      margin-bottom: $spacing--s;
-    }
-
-    @include breakpoint($desktop-large) {
-      height: 125px;
-      margin-bottom: 30px;
-    }
-  }
-
-  .social-icon-img {
-    display: block;
-
-    &.github {
-      width: 27px;
-
-      @include breakpoint($desktop-small) {
-        width: 90px;
-      }
-
-      @include breakpoint($desktop-large) {
-        width: 135px;
-      }
-    }
-
-    &.facebook {
-      width: 13px;
-
-      @include breakpoint($desktop-small) {
-        width: 45px;
-      }
-
-      @include breakpoint($desktop-large) {
-        width: 63px;
-      }
-    }
-
-    &.twitter {
-      width: 23px;
-
-      @include breakpoint($desktop-small) {
-        width: 80px;
-      }
-
-      @include breakpoint($desktop-large) {
-        width: 120px;
-      }
-    }
-
-    &.linkedin{
-      width: 24px;
-
-      @include breakpoint($desktop-small) {
-        width: 78px;
-      }
-
-      @include breakpoint($desktop-large) {
-        width: 117px;
-      }
-    }
-  }
-
-  .social-icon-text {
-    font-family: $font-family--roboto;
-    font-weight: 700;
-    color: $color--white;
-    line-height: 1;
-    font-size: 0.625rem; /* 10px */
-    letter-spacing: 0.02em;
-
-    @include breakpoint($desktop-small) {
-      font-size: 1.25rem; /* 20px */
-    }
-
-    @include breakpoint($desktop-large) {
-      font-size: 1.875rem; /* 30px */
     }
   }
 }

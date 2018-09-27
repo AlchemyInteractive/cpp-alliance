@@ -3,7 +3,7 @@ layout: post
 nav-class: dark
 categories: company, marshall
 title: Marshall Clow joins as a Staff Engineer
-short-description: 'Marshall Clow joins the Alliance as a Staff Engineer. Previously, he worked at Qualcomm for many years. Most of his time is spent working on libc++, the C++ standard library implementation for LLVM. He is also a member of the C++ standards committee, currently serving as the chair of LWG, the library working group. Marshall has been contributing to the Boost libraries since 2001, and is the author of the Boost.Algorithm library. Furthermore he maintains several other boost libraries, and moderates some of the boost mailing lists. Finally, Marshall has graciously taken on the role of release manager for several Boost versions.'
+meta-description: Marshall Clow joins the Alliance as a Staff Engineer. Previously, he worked at Qualcomm for many years. Most of his time is spent working on libc++, the C++ standard library implementation for LLVM. He is also a member of the C++ standards committee, currently serving as the chair of LWG, the library working group. Marshall has been contributing to the Boost libraries since 2001, and is the author of the Boost.Algorithm library. Furthermore he maintains several other boost libraries, and moderates some of the boost mailing lists. Finally, Marshall has graciously taken on the role of release manager for several Boost versions.
 ---
 
 Marshall Clow joins the Alliance as a Staff Engineer. Previously,
