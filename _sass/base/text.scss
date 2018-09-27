@@ -156,6 +156,18 @@ img {
   }
 }
 
+.all {
+  font-size: 0.875rem;
+
+  @include breakpoint($desktop-small) {
+    font-size: 0.9rem;
+  }
+
+  @include breakpoint($desktop-large) {
+    font-size: 1rem;
+  }
+}
+
 .formatted-text {
   @include breakpoint($desktop-small) {
     margin-bottom: $spacing--m;
