@@ -89,7 +89,7 @@
     height: 100vh;
     width: 100vw;
     background: $color--black;
-    padding-top: $spacing--l;
+    padding-top: 35px;
     text-align: center;
     transition: $transition-slow;
     display: none;
@@ -120,7 +120,7 @@
   }
 
   .nav-item {
-    padding-top: $spacing--xxl;
+    padding-top: 35px;
 
     @include breakpoint($desktop-small) {
       padding-top: 0;
@@ -147,17 +147,18 @@
     }
   }
 
-  .social-icon {
-    background: none;
-  }
-
   .connect-content {
     position: absolute;
-    bottom: 30px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
+
     @include breakpoint($desktop-small) {
       display: none;
     }
+  }
+
+  .socials .social-icon {
+    background: none;
   }
 }
