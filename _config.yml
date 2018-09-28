@@ -19,12 +19,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   The C++ Alliance is dedicated to helping the C++ programming language evolve. We see it developing as an ecosystem of open source libraries and as a growing community of those who contribute to those libraries..
 baseurl: /cpp-alliance # the subpath of your site, e.g. /blog
 url: https://alchemyinteractive.github.io # the base hostname & protocol for your site, e.g. http://example.com
-image: /images/cpp.jpg
 twitter:
   username: CPPAlliance
   card: summary
   site: '@CPPAlliance'
-  image: /images/cpp.jpg
 github_username: CPPAlliance
 
 # Build settings
