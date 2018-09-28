@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var navHamburger = document.getElementById('nav-hamburger');
   var navItems = document.getElementById('nav-items');
   var body = document.getElementById('body');
-  var listItems = document.querySelectorAll('.nav-item');
+  var listItems = document.querySelectorAll('.nav-link-mobile');
 
   function forEach(array, callback, scope) {
     for (var i = 0; i < array.length; i++) {
