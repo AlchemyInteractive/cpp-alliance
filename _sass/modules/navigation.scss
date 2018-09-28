@@ -147,18 +147,26 @@
     }
   }
 
-  .connect-content {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @include breakpoint($desktop-small) {
-      display: none;
-    }
+  .social-link {
+    display: flex;
+    justify-content: center;
   }
 
-  .socials .social-icon {
-    background: none;
+  .socials {
+    .connect-content {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+
+      @include breakpoint($desktop-small) {
+        display: none;
+      }
+    }
+
+    .social-icon {
+      background: none;
+    }
   }
 }
