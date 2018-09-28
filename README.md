@@ -16,7 +16,7 @@
     nav-class: dark
     title: post title
     categories: post category
-    meta-description: 'description for og tags'
+    description: 'description for og tags'
     hero-image: 'image link'
     ---
 ```
