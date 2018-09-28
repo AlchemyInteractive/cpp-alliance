@@ -2,7 +2,7 @@
 layout: post
 nav-class: dark
 categories: vinnie
-meta-description: 'Beast, an HTTP and WebSocket protocol library written in C++11, becomes part of the Boost library collection.'
+description: 'Beast, an HTTP and WebSocket protocol library written in C++11, becomes part of the Boost library collection.'
 ---
 <a href="https://github.com/boostorg/beast">Beast</a>, an HTTP and
 WebSocket protocol library written in C++11, becomes part of the

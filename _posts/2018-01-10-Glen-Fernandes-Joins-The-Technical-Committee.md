@@ -2,7 +2,7 @@
 layout: post
 nav-class: dark
 categories: company, glen
-meta-description: Glen Joseph Fernandes, a Boost C++ library author, contributor, maintainer, joins as a technical advisor.
+description: Glen Joseph Fernandes, a Boost C++ library author, contributor, maintainer, joins as a technical advisor.
 ---
 Glen Joseph Fernandes, a Boost C++ library author, contributor, maintainer,
 joins as a technical advisor.
