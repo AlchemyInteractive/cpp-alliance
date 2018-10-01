@@ -26,18 +26,21 @@ We use CircleCI as a build service to trigger custom plugins. (Best of all, it i
 
 Your website can be created using a gitflow where the master branch is the generated, minified content from CircleCI. We recommend one branch (i.e. develop) be reserved for original work and set as the default for the repository.
 
-Updating your website
-Clone the repository
+###Updating your website
+####Clone the repository
 git clone https://github.com/someuser/somerepo.git
-cd somerepo
+
+`cd somerepo`
 
 Create a new branch for your work
-git checkout -b new-changes
+`git checkout -b new-changes`
 
 Commit your changes and push to github
+```
 git add .
 git commit -m "description of changes"
 git push -u origin new-changes
+```
 
 Create a Pull Request and merge your work into the develop branch.
 CircleCI will then pull down the develop branch, generate the pages, minify code, and push it to the master branch.
