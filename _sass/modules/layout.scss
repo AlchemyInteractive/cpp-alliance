@@ -51,9 +51,13 @@
 
   .header-shadow {
     position: absolute;
-    bottom: 1px;
-    left: 50%;
+    bottom: 30%;
+    left:calc(50% + 30px);
     transform: translateX(-50%);
+
+    &.center {
+      left: 50%;
+    }
   }
 
   .section-subheader {
