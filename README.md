@@ -27,6 +27,7 @@ We use CircleCI as a build service to trigger custom plugins. (Best of all, it i
 Your website can be created using a gitflow where the master branch is the generated, minified content from CircleCI. We recommend one branch (i.e. develop) be reserved for original work and set as the default for the repository.
 
 ###Updating your website
+
 ####Clone the repository
 git clone https://github.com/someuser/somerepo.git
 
