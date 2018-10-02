@@ -4,7 +4,6 @@ nav-class: dark
 title:  "Welcome to Jekyll!"
 date:   2018-09-17 11:29:03 -0700
 categories: jekyll update
-description: Conveniently promote front-end vortals before ethical paradigms. Dynamically fabricate multimedia based outsourcing with an expanded array of bandwidth. Phosfluorescently utilize B2C bandwidth with user friendly paradigms. Dynamically streamline vertical leadership for.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
