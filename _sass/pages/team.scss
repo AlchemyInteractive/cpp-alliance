@@ -46,6 +46,7 @@
 
   .title {
     margin: 3px 0 35px;
+    display: block;
 
     @include breakpoint($desktop-small) {
       margin: $spacing--xxs 0 30px;
@@ -56,6 +57,10 @@
     @include breakpoint($desktop-small) {
       order: 1;
       width: 50%;
+    }
+
+    p {
+      padding: 5px 0;
     }
   }
 
