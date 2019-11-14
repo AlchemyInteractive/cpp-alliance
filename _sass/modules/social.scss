@@ -1,12 +1,10 @@
 .section.connect {
   padding: 55px $spacing--l 50px;
   text-align: center;
-  background: url('/cpp-alliance/images/contact-bg-mobile.png') no-repeat center/cover;
-  /* background: url('images/contact-bg-mobile.png') no-repeat center/cover; */ /* will need to update for prod */
+  background: url('/images/contact-bg-mobile.png') no-repeat center/cover;
 
   @include breakpoint($desktop-small) {
-    background: url('/cpp-alliance/images/contact-bg.png') no-repeat center/cover;
-    /*background: url('/images/contact-bg.png') no-repeat center/cover;*/ /* will need to update for prod */
+    background: url('/images/contact-bg.png') no-repeat center/cover;
     height: calc(100vh - 130px);
     padding: 0;
     position: relative;
